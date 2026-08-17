@@ -104,9 +104,11 @@
     }
 
     .bye {
-      transform: scale(0.8);
-      position: relative;
-      right: 11%;
+      display: none;
+    }
+
+    .sligan {
+      display: block;
     }
   }
 
@@ -115,7 +117,7 @@
 
     h3 {
       position: relative;
-      left: 42%;
+      left: 39%;
     }
 
     .footer-nav {
@@ -251,6 +253,10 @@
 
       .mblie {
         display: inline-block;
+      }
+
+      .sligan {
+        display: none;
       }
     }
 
@@ -471,7 +477,7 @@
 
 @media screen and (max-width: 375px) {
   .gradient-main {
-    height: 4512px;
+    height: 4534px;
   }
 
   .container {

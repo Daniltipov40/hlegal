@@ -90,16 +90,17 @@
     height: 450px;
   }
   .container-publications .bye {
-    transform: scale(0.8);
-    position: relative;
-    right: 11%;
+    display: none;
+  }
+  .container-publications .sligan {
+    display: block;
   }
   .container-footer {
     max-width: 1440px;
   }
   .container-footer h3 {
     position: relative;
-    left: 42%;
+    left: 39%;
   }
   .container-footer .footer-nav {
     position: relative;
@@ -214,6 +215,9 @@
   }
   .container-publications .card-publl .mblie {
     display: inline-block;
+  }
+  .container-publications .card-publl .sligan {
+    display: none;
   }
   .container-publications .lini {
     width: 222px !important;
@@ -382,7 +386,7 @@
 }
 @media screen and (max-width: 375px) {
   .gradient-main {
-    height: 4512px;
+    height: 4534px;
   }
   .container {
     height: 45px;
