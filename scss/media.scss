@@ -1,6 +1,9 @@
 @use 'base' as *;
 
 @media screen and (max-width: 1440px) {
+  .gradient-main {
+    height: 2362px;
+  }
   .container {
     display: flex;
     max-width: 1440px;
@@ -67,6 +70,16 @@
 
   .slider-wrapper {
     width:1320px;
+
+    .testing {
+      display: none;
+    }
+
+    .laginyal {
+      display: block;
+      width: 400px;
+      height: 344px;
+    }
   }
 
   .container-collab {
@@ -101,6 +114,14 @@
     .card-publl {
       width: 420px;
       height: 450px;
+
+      h4 {
+        width: 350px;
+      }
+
+      p {
+        width: 358px;
+      }
     }
 
     .bye {
@@ -117,7 +138,7 @@
 
     h3 {
       position: relative;
-      left: 39%;
+      left: 37%;
     }
 
     .footer-nav {
@@ -129,7 +150,7 @@
 
 @media screen and (max-width: 1024px) {
   .gradient-main {
-    height: 2452px;
+    height: 2532px;
   }
 
     .container {
@@ -193,10 +214,14 @@
   }
 
   .slider-wrapper {
-    width: 904px;
+    width: 955px;
 
     .testing {
      display: none;
+    }
+
+    .laginyal {
+      display: none;
     }
 
     .nepotrib {
@@ -216,7 +241,6 @@
 
     .collab {
       transform: scale(0.7);
-      margin-left: 3%;
     }
 
     h3 {
@@ -227,7 +251,7 @@
 
   .container-publications {
     width: 1167px;
-    height: 689px;
+    height: 735px;
     position: relative;
     bottom: 72px;
     background: $bg;
@@ -235,7 +259,7 @@
 
     .card-publl {
       width: 282px;
-      height: 556px;
+      height: 595px;
 
       h4 {
         position: relative;
@@ -277,7 +301,7 @@
 
     h3 {
       position: relative;
-      left: 17%;
+      left: 12%;
     }
   }
 }
@@ -530,7 +554,7 @@
     h1 {
       left: 37%;
       width: 316px;
-      bottom: 69vh;
+      bottom: 100vh;
       line-height: 46px;
     }
   }
@@ -674,6 +698,8 @@
     .footer-nav {
       width: 315px;
       height: 306px;
+      position: relative;
+      right: 20%;
       .li-1 {
         list-style: none;
         display: flex;
@@ -695,6 +721,13 @@
         flex-direction: column;
         align-items: center;
 
+        li {
+          a {
+            display: flex;
+            width: 104px;
+          }
+        }
+
         svg {
           position: relative;
           top: 4px;
@@ -708,7 +741,7 @@
       position: relative;
       display: flex;
       top: 61%;
-      left: -288px;
+      left: -323px;
     }
   }
 

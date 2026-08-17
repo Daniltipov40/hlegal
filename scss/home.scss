@@ -245,6 +245,10 @@
     display: none;
   }
 
+  .laginyal {
+    display: none;
+  }
+
  &_item {
    display: flex;
    justify-content: space-between;
@@ -289,7 +293,7 @@
   }
 
   .slick-dots li button:before {
-    font-size: 55px;
+    font-size: 17px;
     color: $regular;
     opacity: 20%;
     margin-top: 30px;
@@ -399,6 +403,7 @@
       margin-left: 30px;
       @include font(14px, 22px, 400, black);
       font-family: $montserrat;
+      width: 454px;
     }
   }
 
@@ -483,7 +488,7 @@
   h3 {
     display: flex;
     position: relative;
-    left: 52%;
+    left: 46%;
     @include font(16px, 100%, 400, $bgtext);
     font-family: $montserrat;
     top: 56px;

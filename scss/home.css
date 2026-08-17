@@ -269,6 +269,9 @@
 .slider-wrapper .ostannya {
   display: none;
 }
+.slider-wrapper .laginyal {
+  display: none;
+}
 .slider-wrapper_item {
   display: flex;
   justify-content: space-between;
@@ -320,7 +323,7 @@
   color: #B3B3BA;
 }
 .slider-wrapper .slick-dots li button:before {
-  font-size: 55px;
+  font-size: 17px;
   color: #24A3FF;
   opacity: 20%;
   margin-top: 30px;
@@ -442,6 +445,7 @@
   color: black;
   color: black;
   font-family: "Montserrat", sans-serif;
+  width: 454px;
 }
 .container-publications .mblie {
   display: none;
@@ -528,7 +532,7 @@
 .container-footer h3 {
   display: flex;
   position: relative;
-  left: 52%;
+  left: 46%;
   font-size: 16px;
   line-height: 100%;
   font-weight: 400;
