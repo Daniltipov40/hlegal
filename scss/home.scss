@@ -1,0 +1,488 @@
+@use 'base' as *;
+
+//body {
+//  overflow-x: hidden;
+//}
+
+.gradient-main {
+  width: 1920px;
+  height: 2286px;
+  background: $gradient-main;
+}
+
+.container {
+  max-width: 100%;
+  display: flex;
+  @include flex(space-between, center);
+}
+
+.header.mobile {
+  display: none;
+}
+
+.logo {
+  svg {
+    display: inline-block;
+    margin-left: 160px;
+    position: relative;
+    top: 22px;
+  }
+}
+
+.lang {
+  position: relative;
+  display: flex;
+  left: 34%;
+
+  ul {
+    display: flex;
+    gap: 18px;
+    margin: 0 auto;
+
+    .button-click, a {
+      display: flex;
+      cursor: pointer;
+      position: relative;
+      list-style: none;
+      width: 33px;
+      height: 25px;
+      transition: 0.3s ease;
+      border-radius: 8px;
+      text-decoration: none;
+      @include font(12px, 100%, 700, $white);
+      font-family: $montserrat;
+      align-content: center;
+      flex-wrap: balance;
+      padding: 7px 3px 7px 9px;
+      right: 17px;
+      margin-right: -15px;
+      &:hover {
+      transform: scale(1.1);
+        background: $accent;
+      }
+    }
+
+    li::marker {
+      color: $separter;
+      font-size: 20px;
+    }
+    p {
+      @include font(16px, 100%, 400, $bgtext);
+      font-family: $montserrat;
+      position: relative;
+      right: 7px;
+      bottom: 1px;
+    }
+
+    svg {
+      display: flex;
+      position: relative;
+      right: 7px;
+      bottom: 1px;
+    }
+  }
+}
+
+.main {
+  display: flex;
+  margin-top: 91px;
+  position: relative;
+  right: 134px;
+  ul {
+    display: flex;
+    gap: 15px;
+
+
+    li {
+      display: flex;
+
+      a {
+        @include font(16px, 100%, 700, $white);
+        font-family: $montserrat;
+        text-decoration: none;
+        transition: 0.3s ease;
+        &:hover {
+          transform: translateY(-5px);
+          background: $gradient-text;
+          background-clip: text;
+          -webkit-background-clip: text;
+          -moz-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          -moz-text-fill-color: transparent;
+        }
+      }
+    }
+  }
+}
+
+.logo-h {
+  display: inline-block;
+  margin-left: 524px;
+
+  h1 {
+    position: relative;
+    @include font(38px, 100%, 700, $white);
+    font-family: $montserrat;
+    bottom: 537px;
+    left: 20%;
+  }
+}
+
+#tabs {
+  display: flex;
+  justify-content: center;
+  margin: 60px 280px 60px 280px;
+  gap: 124px;
+  a {
+    font-family: $montserrat;
+    @include font(38px, 100%, 700, $bgtext);
+    transition: 0.3s ease;
+    text-decoration: none;
+    list-style: none;
+    &:hover  {
+    transform: scale(1.1);
+      background: $gradient-text;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -moz-text-fill-color: transparent;
+    }
+  }
+  ul {
+    list-style: none;
+  }
+  li {
+    width: 418px;
+    height: 61px;
+    border-right: 2px solid #FFFFFF;
+  }
+
+  h2 {
+    @include font(30px, 100%, 700, $white);
+    font-family: $montserrat;
+    padding-bottom: 30px;
+    margin-top: 30px;
+  }
+
+  p {
+    font-family: $montserrat;
+    @include font(19px, 30px, 400, $white);
+    margin: 0 auto;
+  }
+}
+
+.bg-text-gradietn {
+    margin-top: 87px;
+    margin-left:160px;
+    h2 {
+      background: $gradient-text;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -moz-text-fill-color: transparent;
+      @include font(38px, 100%, 700, none);
+      font-family: $montserrat;
+    }
+}
+
+.container-cards {
+  display: flex;
+  max-width: 1920px;
+  justify-content: center;
+
+  .cards {
+    display: grid;
+    width: 1600px;
+    gap: 60px;
+    height: 295px;
+    margin-top: 60px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+    h3 {
+      @include font(22px, 28px, 700, $regular);
+      font-family: $montserrat;
+      padding-bottom: 15px;
+      padding-top: 30px;
+    }
+
+    p {
+      font-family: $montserrat;
+      @include font (16px, 26px, 400, $white)
+    }
+  }
+}
+
+.container-slide {
+  max-width: 1920px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 60px 0;
+}
+
+.slider-wrapper {
+  width: 1600px;
+
+  img {
+    width: 400px;
+    height: 298px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+  }
+
+  .nepotrib {
+    display: none;
+  }
+
+  .velel {
+    display: none;
+  }
+
+  .ostannya {
+    display: none;
+  }
+
+ &_item {
+   display: flex;
+   justify-content: space-between;
+ }
+
+  &_right-content {
+    //height: 298px;
+    padding: 30px;
+    background: $bg;
+
+    h3 {
+      @include font(14px, 100%, 700, $regular);
+      letter-spacing: 1px;
+      font-family: $montserrat;
+      padding-bottom: 5px;
+    }
+
+    h2 {
+      background: $gradient-text;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -moz-text-fill-color: transparent;
+      font-family: $montserrat;
+      margin-top: 22px;
+      margin-bottom: 30px;
+      @include font(38px, 100%, 700)
+    }
+
+    h4 {
+      margin-top: 30px;
+      font-family: $montserrat;
+      @include font(16px, 100%, 700, $bgtext);
+    }
+
+    p {
+      font-family: $montserrat;
+      margin-top: 6px;
+      @include font(14px, 22px, 400, $bgtext);
+    }
+  }
+
+  .slick-dots li button:before {
+    font-size: 55px;
+    color: $regular;
+    opacity: 20%;
+    margin-top: 30px;
+  }
+
+  .slick-dots li.slick-active button:before {
+    color: $regular;
+  }
+  //.slick-track {
+  //  opacity: 1;
+  //  width: 11200px;
+  //  transform: translate3d(-1600px, 0px, 0px);
+  //}
+}
+
+.container-collab {
+  margin: 60px 0;
+  display: flex;
+  max-width: 1920px;
+  height: 407px;
+  @include flex(center, center, column);
+
+  h3 {
+    letter-spacing: 1px;
+    @include  font(14px, 100%, 700, $violet);
+    font-family: $montserrat;
+    padding-bottom: 30px;
+  }
+
+  .collab {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .counter {
+    display: none;
+  }
+}
+
+.container-publications {
+  max-width: 1920px;
+  height: 563px;
+  background: $bg;
+
+  .text-publ {
+    h3 {
+      @include font(14px, 100%, 700, $regular);
+      letter-spacing: 1px;
+      font-family: $montserrat;
+      padding-bottom: 10px;
+      margin-left: 160px;
+    }
+    h2 {
+      background: $gradient-text;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -moz-text-fill-color: transparent;
+      @include font(38px, 100%, 700, none);
+      width: 525px;
+      height: 46px;
+      margin-bottom: 20px;
+      font-family: $montserrat;
+      margin-left: 160px;
+    }
+  }
+
+  .cards-publl {
+    display: flex;
+    width: 514px;
+    height: 430px;
+    border-radius: 8px;
+    gap: 30px;
+    margin-left: 160px;
+  }
+
+  .card-publl {
+    display: flex;
+    flex-direction: column;
+    background: $white;
+    h4 {
+      margin-left: 30px;
+      @include font(16px, 22px, 700, $regular);
+      font-family: $montserrat;
+      margin-top: 30px;
+    }
+
+    h3 {
+      margin-left: 30px;
+      @include font(12px, 100%, 700, $bgtext);
+      letter-spacing: 1px;
+      font-family: $montserrat;
+      margin-top: 15px;
+    }
+
+    .lini {
+      margin-left: 30px;
+      border: 2px solid $separter;
+      width: 454px;
+      margin-top: 15px;
+    }
+
+    p {
+      padding-top: 15px;
+      margin-left: 30px;
+      @include font(14px, 22px, 400, black);
+      font-family: $montserrat;
+    }
+  }
+
+  .mblie {
+    display: none;
+  }
+
+  .grid-img {
+    display: none;
+  }
+}
+
+.footer-lini {
+  position: relative;
+  width: 1600px;
+  height: 2px;
+  background: $separter;
+  margin: 0 auto;
+}
+
+.container-footer {
+  display: flex;
+  max-width: 1920px;
+  height: 171px;
+
+  .footer-nav {
+    margin-left: 160px;
+
+    .li-1 {
+      display: flex;
+      margin-top: 62px;
+      gap: 26px;
+
+      a {
+        @include font(16px, 100%, 400, $violet);
+        text-decoration: none;
+        font-family: $montserrat;
+      }
+
+      span {
+        position: relative;
+        bottom: 3%;
+        @include font(12px, 100%, 700, $regular);
+        font-family: $montserrat;
+        letter-spacing: 1px;
+        transition: 0.3s ease;
+
+        &:hover {
+          transform: scale(1.1);
+          color: $hover;
+        }
+      }
+    }
+
+    .li-2 {
+      display: flex;
+      gap: 26px;
+
+      svg {
+        position: relative;
+        bottom: 10px;
+      }
+      li {
+        a {
+          font-family: $montserrat;
+          text-decoration: none;
+          @include font(16px, 100%, 700, $vioalt);
+          transition: 0.3s ease;
+        }
+        .testing {
+          @include font(16px, 100%, 700, $regular);
+          font-family: $montserrat;
+        }
+      }
+    }
+  }
+
+  h3 {
+    display: flex;
+    position: relative;
+    left: 52%;
+    @include font(16px, 100%, 400, $bgtext);
+    font-family: $montserrat;
+    top: 56px;
+    letter-spacing: 1px;
+  }
+}

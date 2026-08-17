@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+// fonts
+$montserrat: "Montserrat", sans-serif;
+// ---------------------------------------- MIXINS ------------------------------------------------------
+// mixin fonts
+@mixin font ($fontsize, $lineheight, $fontweight: null, $color: null) {
+  font-size: $fontsize;
+  line-height: $lineheight;
+  font-weight: $fontweight;
+  color: $color;
+  @if ($color) != null {
+    color: $color;
+  }
+}
+
+// mixin flexbox
+@mixin flex ($justify, $align, $direction: null) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  @if ($direction) != null {
+    flex-direction: $direction;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+//
+//.h1 {
+//  @include font(38px, 46px, 700);
+//}
+
+// ----------------------------------------------------------- colors --------------------------------------------------
+$violet: #323264;
+$vioalt: #46466E;
+$viosoft: #686887;
+$accent:#F0145A;
+$regular:#24A3FF;
+$hover:#0085FF;
+$active:#006CCF;
+$bg:#F5F5FA;
+$bgalt:#EDEDF7;
+$bgtext:#B3B3BA;
+$separter:#E6E6F0;
+$pik: #A54B5F;
+$blapink:#7A425E;
+$great:#F0145A;
+$gradint:#693264;
+$vilohy:#643E72;
+$whitpink:#EF8080;
+$white: #FFFFFF;
+
+
+// -------------------------------------------------- gradient ------------------------------------------------------
+$gradient-text: linear-gradient(90.13deg, $accent 0.84%, $whitpink 99.96%);
+$gradient-main: linear-gradient(228.57deg, $violet 11.93%, $violet 57.17%, $vilohy 87.46%);
