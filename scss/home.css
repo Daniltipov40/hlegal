@@ -7,7 +7,7 @@
 
 .gradient-main {
   width: 1920px;
-  height: 2286px;
+  height: 2321px;
   background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
 }
 
@@ -320,7 +320,7 @@
   color: #B3B3BA;
 }
 .slider-wrapper .slick-dots li button:before {
-  font-size: 55px;
+  font-size: 20px;
   color: #24A3FF;
   opacity: 20%;
   margin-top: 30px;
@@ -447,6 +447,9 @@
   display: none;
 }
 .container-publications .grid-img {
+  display: none;
+}
+.container-publications .sligan {
   display: none;
 }
 

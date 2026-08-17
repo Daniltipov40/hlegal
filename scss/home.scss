@@ -6,7 +6,7 @@
 
 .gradient-main {
   width: 1920px;
-  height: 2286px;
+  height: 2321px;
   background: $gradient-main;
 }
 
@@ -289,7 +289,7 @@
   }
 
   .slick-dots li button:before {
-    font-size: 55px;
+    font-size: 20px;
     color: $regular;
     opacity: 20%;
     margin-top: 30px;
@@ -407,6 +407,10 @@
   }
 
   .grid-img {
+    display: none;
+  }
+
+  .sligan {
     display: none;
   }
 }
